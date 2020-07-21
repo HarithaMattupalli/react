@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var a = 10; // global variable
+      function add(){
+        var b = 20; // local variable
+        var c = a+b;
+        document.write("Addition of "+a+" and "+b+" is "+c+"<br/>");
+      }
+
+      function sub(){
+        var b = 20; // local variable
+        var d = a-b;
+        document.write("Subtraction of "+a+" and "+b+" is "+d);
+      }
+      add();
+      sub();
+    </script>
+  </body>
+</html>
