@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function data(){
+        var a = document.getElementById("name").value;
+        if(a%2==0){
+          document.writeln("even");
+        }
+        else{
+          document.writeln("odd");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" name="" id="name">
+    <button id="btn" onclick="data()">Click</button>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function data(){
+        var a = document.getElementsByClassName("name")[0].value;
+        if(a%2==0){
+          document.writeln("even");
+        }
+        else{
+          document.writeln("odd");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" name="" class="name">
+    <button id="btn" onclick="data()">Click</button>
+  </body>
+</html>
