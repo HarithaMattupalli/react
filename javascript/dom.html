@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="txtId" name="txtName" class="txtClass">
+      <input type="text" id="txtId" name="txtName" class="txtClass">
+      <button type="button" name="button" onclick="buttonClick()">Submit</button>
+    </form>
+  </body>
+</html>
+<script type="text/javascript">
+  function buttonClick(){
+    // var value = document.getElementById("txtId").value;
+    // alert(value);
+    //
+    // var value2 = document.getElementById("txtId2").value;
+    // alert(value2);
+
+    // var value3 = document.getElementsByName("txtName");
+    // alert("get length by name:"+value3.length);
+    // for(var i=0;i<value3.length;i++){
+    //   alert("get value by name:"+value3[i].value);//loop repeats if they have same name else it exceutes only once for respective name
+    // }
+
+    // var value4 = document.getElementsByClassName("txtClass");
+    // alert("get length by classname:"+value4.length);
+    // for(var i=0;i<value4.length;i++){
+    //   alert("get value by classname:"+value4[i].value);//loop repeats if they have same classname else it exceutes only once for respective name
+    // }
+
+    var value4 = document.getElementsByTagName("input");
+    alert("get length by tagname:"+value4.length);
+    for(var i=0;i<value4.length;i++){
+      alert("get value by tagname:"+value4[i].value);//loop repeats if they have same classname else it exceutes only once for respective name
+    }
+  }
+
+
+</script>
